@@ -14,166 +14,158 @@
   </head>
 
   <body>
-
-
-
-
     <!-- header of page included navbar -->
 
     <div class="header">
       <div class="navbar">
-          <div class="logo">
-              <img src="assets/logo.png" width="125px">
-          </div>
-  
-          <div class="searchbox">
-              <form class="search" action="/action_page.php">
-                  <input class="search1" type="text" placeholder="Search.." name="search">
-              </form>
-          </div>
-          <nav>
-              <ul class="menuitems">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Product</a></li>
-                  <li><button onclick="openForm('SignIn')">Sign In</button></li>
-              </ul>
-          </nav>
-          
-      </div>
-  </div>
-
-
-
-
-  <div class="categories">
-    <div class="small-container">
-        <div class="row">
-            <div class="col3">
-                <img src="assets/imgv5.jpg">
-            </div>
-            <div class="col3">
-                <img src="assets/imgv6.jpg">
-            </div>
-            <div class="col3">
-                <img src="assets/imgv7.jpg">
-            </div>
+        <div class="logo">
+          <img src="assets/logo.png" width="125px" />
         </div>
+
+        <div class="search-wrapper">
+          <div class="searchbox">
+          <input
+            class="search1"
+            type="text"
+            placeholder="search for vegetables"
+            name="search"
+          />
+        </div>
+        </div>
+
+        <nav class="navbar-menu">
+          <ul class="menuitems">
+            <li><a >Product</a></li>
+            <li><a >Cart</a></li>
+            <li><a onclick="openForm('SignIn')">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
-</div>
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col3">
+            <img src="assets/imgv5.jpg" />
+            <p>Checkout this category</p>
+          </div>
+          <div class="col3">
+            <img src="assets/imgv6.jpg" />
+            <p>Checkout this category</p>
 
+          </div>
+          <div class="col3">
+            <img src="assets/imgv7.jpg" />
+            <p>Checkout this category</p>
 
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!--product section-->
 
-   <!--product section-->
-
-     <!--Featured product-->
-     <div class="small-container">
+    <!--Featured product-->
+    <div class="small-container">
       <h2 class="tittle">Featured Product</h2>
       <div class="row">
-          <div class="col4">
-             <a href="proddetail.html"><img src="assets/imgv20.jpg"></a>
-             <a href="proddetail.html"><h4>Fresh Corn</h4></a>
-              <p>$50.00</p>
+        <div class="col4">
+          <a href="proddetail.html"><img src="assets/imgv20.jpg" /></a>
+          <a href="proddetail.html"><h4>Fresh Corn</h4></a>
+          <p>$50.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv19.jpg" />
+          <h4>Fresh Peepers</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <!--Icon of star-->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
           </div>
-          <div class="col4">
-              <img src="assets/imgv19.jpg">
-              <h4>Fresh Peepers</h4>
-              <div class="rating">
-                  <i class="fa fa-star"></i> <!--Icon of star-->
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-half-o"></i>
-              </div>
-              <p>$75.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/imgv18.jpg">
-              <h4>Fresh mushrooms</h4>
-              
-              <p>$65.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/imgv17.jpg">
-              <h4>Fresh broccoli</h4>
-              <p>$90.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/imgv10.jpg">
-              <h4>Fresh Tomato</h4>
-              
-              <p>$90.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/imgv16.jpg">
-              <h4>Fresh Brinjal</h4>
-            
-              <p>$90.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/imgv9.jpg">
-              <h4>Green Chilli</h4>
-            
-              <p>$90.00</p>
-          </div>
-          <div class="col4">
-              <img src="assets/img21.jpg">
-              <h4>Red Cabbage</h4>
-              <p>$90.00</p>
-          </div>
-          
-          <div class="col4">
-              <img src="assets/imgv13.jpg">
-              <h4>Fresh courgettes </h4>
-             
-              <p>$90.00</p>
-          </div>
+          <p>$75.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv18.jpg" />
+          <h4>Fresh mushrooms</h4>
 
-          <div class="col4">
-              <img src="assets/imgv21.jpg">
-              <h4>Blue Barries</h4>
+          <p>$65.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv17.jpg" />
+          <h4>Fresh broccoli</h4>
+          <p>$90.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv10.jpg" />
+          <h4>Fresh Tomato</h4>
 
-              <p>$90.00</p>
-          </div>
-       
-          <div class="col4">
-              <img src="assets/imgv22.jpg">
-              <h4>Fresh Cowpeas</h4>
+          <p>$90.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv16.jpg" />
+          <h4>Fresh Brinjal</h4>
 
-              <p>$90.00</p>
-          </div>
+          <p>$90.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/imgv9.jpg" />
+          <h4>Green Chilli</h4>
 
-          <div class="col4">
-              <img src="assets/imgv23.jpg">
-              <h4>Green Beans</h4>
+          <p>$90.00</p>
+        </div>
+        <div class="col4">
+          <img src="assets/img21.jpg" />
+          <h4>Red Cabbage</h4>
+          <p>$90.00</p>
+        </div>
 
-              <p>$90.00</p>
-          </div>
+        <div class="col4">
+          <img src="assets/imgv13.jpg" />
+          <h4>Fresh courgettes</h4>
 
+          <p>$90.00</p>
+        </div>
+
+        <div class="col4">
+          <img src="assets/imgv21.jpg" />
+          <h4>Blue Barries</h4>
+
+          <p>$90.00</p>
+        </div>
+
+        <div class="col4">
+          <img src="assets/imgv22.jpg" />
+          <h4>Fresh Cowpeas</h4>
+
+          <p>$90.00</p>
+        </div>
+
+        <div class="col4">
+          <img src="assets/imgv23.jpg" />
+          <h4>Green Beans</h4>
+
+          <p>$90.00</p>
+        </div>
       </div>
-      </div>
+    </div>
 
- <!--Graph section-->
-      <div class="offer">
-          <div class="small-container">
-              <h3>Price Graph of This Month</h3>
-              <div class="row">
-                  <div class="col2">
-                      <img src="assets/imgv25.jpg" class="offer-img">
-                  </div>
-              </div>
+    <!--Graph section-->
+    <div class="offer">
+      <div class="small-container">
+        <h3>Price Graph of This Month</h3>
+        <div class="row">
+          <div class="col2">
+            <img src="assets/imgv25.jpg" class="offer-img" />
           </div>
+        </div>
       </div>
+    </div>
 
-
-
-
-
-
-
-
-<!-- Code for authentiation page signin and signup  -->
+    <!-- Code for authentiation page signin and signup  -->
 
     <div class="signin-page signup-page" id="signin">
       <div class="signup-page-top">
