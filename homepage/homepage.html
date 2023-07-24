@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./auth.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>V Shop</title>
+  </head>
+
+  <body>
+
+
+
+
+    <!-- header of page included navbar -->
+
+    <div class="header">
+      <div class="navbar">
+          <div class="logo">
+              <img src="assets/logo.png" width="125px">
+          </div>
+  
+          <div class="searchbox">
+              <form class="search" action="/action_page.php">
+                  <input class="search1" type="text" placeholder="Search.." name="search">
+              </form>
+          </div>
+          <nav>
+              <ul class="menuitems">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><button onclick="openForm('SignIn')">Sign In</button></li>
+              </ul>
+          </nav>
+          
+      </div>
+  </div>
+
+
+
+
+  <div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col3">
+                <img src="assets/imgv5.jpg">
+            </div>
+            <div class="col3">
+                <img src="assets/imgv6.jpg">
+            </div>
+            <div class="col3">
+                <img src="assets/imgv7.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+   <!--product section-->
+
+     <!--Featured product-->
+     <div class="small-container">
+      <h2 class="tittle">Featured Product</h2>
+      <div class="row">
+          <div class="col4">
+             <a href="proddetail.html"><img src="assets/imgv20.jpg"></a>
+             <a href="proddetail.html"><h4>Fresh Corn</h4></a>
+              <p>$50.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv19.jpg">
+              <h4>Fresh Peepers</h4>
+              <div class="rating">
+                  <i class="fa fa-star"></i> <!--Icon of star-->
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+              </div>
+              <p>$75.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv18.jpg">
+              <h4>Fresh mushrooms</h4>
+              
+              <p>$65.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv17.jpg">
+              <h4>Fresh broccoli</h4>
+              <p>$90.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv10.jpg">
+              <h4>Fresh Tomato</h4>
+              
+              <p>$90.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv16.jpg">
+              <h4>Fresh Brinjal</h4>
+            
+              <p>$90.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/imgv9.jpg">
+              <h4>Green Chilli</h4>
+            
+              <p>$90.00</p>
+          </div>
+          <div class="col4">
+              <img src="assets/img21.jpg">
+              <h4>Red Cabbage</h4>
+              <p>$90.00</p>
+          </div>
+          
+          <div class="col4">
+              <img src="assets/imgv13.jpg">
+              <h4>Fresh courgettes </h4>
+             
+              <p>$90.00</p>
+          </div>
+
+          <div class="col4">
+              <img src="assets/imgv21.jpg">
+              <h4>Blue Barries</h4>
+
+              <p>$90.00</p>
+          </div>
+       
+          <div class="col4">
+              <img src="assets/imgv22.jpg">
+              <h4>Fresh Cowpeas</h4>
+
+              <p>$90.00</p>
+          </div>
+
+          <div class="col4">
+              <img src="assets/imgv23.jpg">
+              <h4>Green Beans</h4>
+
+              <p>$90.00</p>
+          </div>
+
+      </div>
+      </div>
+
+ <!--Graph section-->
+      <div class="offer">
+          <div class="small-container">
+              <h3>Price Graph of This Month</h3>
+              <div class="row">
+                  <div class="col2">
+                      <img src="assets/imgv25.jpg" class="offer-img">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- Code for authentiation page signin and signup  -->
+
+    <div class="signin-page signup-page" id="signin">
+      <div class="signup-page-top">
+        <p class="cancel-button" onclick="closeForm('signIn')">❌</p>
+        <p class="site-name">V Shop</p>
+      </div>
+
+      <form class="form-container">
+        <label>Enter Your Email</label>
+        <input type="email" placeholder="xyz@gmail.com" />
+        <label>Enter Your Password</label>
+        <input type="password" placeholder="Enter password" />
+        <button class="signup-page-button">Sign In</button>
+        <p style="font-size: 12px; margin-top: 10px">
+          Don't have an account ?
+          <span
+            onclick="openForm('SignUp')"
+            style="cursor: pointer; font-size: 18px; font-weight: 500"
+            >Sign Up</span
+          >
+        </p>
+        <p class="terms-condition">
+          By clicking on Sign In, I accept the
+          <a class="link">Terms & Conditions</a> &
+          <a class="link">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+
+    <div class="signup-page" id="signup">
+      <div class="signup-page-top">
+        <p class="cancel-button" onclick="closeForm('SignUp')">❌</p>
+        <p class="site-name">V Shop</p>
+      </div>
+
+      <form class="form-container">
+        <label>Enter Your Name</label>
+        <input type="text" placeholder="Enter your name" />
+        <label>Enter Your Email</label>
+        <input type="email" placeholder="xyz@gmail.com" />
+        <label>Enter Password</label>
+        <input type="password" placeholder="Choose a strong password" />
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Enter same password again" />
+        <button class="signup-page-button">Sign Up</button>
+        <p style="font-size: 12px; margin-top: 10px">
+          Already have an account ?
+          <span
+            onclick="openForm('SignIn')"
+            style="cursor: pointer; font-size: 18px; font-weight: 500"
+            >Sign In</span
+          >
+        </p>
+        <p class="terms-condition">
+          By clicking on Sign Up, I accept the
+          <a class="link">Terms & Conditions</a> &
+          <a class="link">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="./homepage.js" />
+  </body>
+</html>

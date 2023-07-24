@@ -1,0 +1,130 @@
+body {
+  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+nav {
+  text-align: right;
+  flex: 1;
+  color: white;
+}
+.logo {
+  background-color: aqua;
+}
+nav ul li {
+  display: inline-block; /*horizontally align*/
+  list-style: none; /*bullet point remove*/
+  font-size: 20px;
+  padding: 14px;
+  min-width: 100px;
+}
+
+.searchbox {
+  margin-left: 250px;
+}
+.search1 {
+  height: 30px;
+  width: 400px;
+}
+
+.menuitems {
+  color: aliceblue;
+}
+a {
+  text-decoration: none;
+}
+
+.categories {
+  margin: 70px 0px;
+}
+
+.small-container/* uses in mid all image padding both side 65px*/ {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col3 {
+  /*we name all col3 becoz at one time use flex basis and it will take 30% individually*/
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+.col3 img {
+  width: 100%;
+}
+
+.col4 {
+  flex-basis: 23%;
+  margin-bottom: 30px;
+}
+
+.col4 img {
+  width: 100%;
+}
+
+.tittle {
+  /*featured product text in center*/
+  text-align: center;
+  margin: 60px 100px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  font-weight: bold;
+}
+
+.tittle::after {
+  /*featured product line */
+  content: "";
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /*center from x axis*/
+}
+
+.rating .fa {
+  /*change color of icon star*/
+  color: #ff5a3b;
+}
+
+.col4 {
+  transition: transform 0.5s;
+}
+
+.col4:hover {
+  /*hover effect on featured product*/
+  transform: translateY(-5px); /*8move 5 px by Y axis*/
+}
+
+/*price graph of this week*/
+.offer {
+  padding: 30px 0px;
+  margin-top: 50px;
+}
+
+.col2 .offer-img {
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
