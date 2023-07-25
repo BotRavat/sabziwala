@@ -20,33 +20,40 @@ function closeForm(formType) {
 const searchInput = document.getElementById("search-input");
 const searchPlaceholder = document.getElementById("search-input-placeholder");
 const additionalText = [
-  "Search for  \"Vegetables\" ",
-  "Search for \"Fruits\"",
-  "Search for \"Herbs\"",
-  "Search for \"Spices\"",
+  'Search for  "Vegetables" ',
+  'Search for "Fruits"',
+  'Search for "Herbs"',
+  'Search for "Spices"',
 ];
 let additionalTextIndex = 0;
 let typingAnimation;
+let erasingAnimation;
 
-function animateText(text) {
-  searchPlaceholder.textContent = "";
-  let charIndex = 0;
-  typingAnimation = setInterval(() => {
-    if (charIndex <= text.length) {
-      searchPlaceholder.textContent = text.slice(0, charIndex);
-      charIndex++;
-    } else {
-      clearInterval(typingAnimation);
+function typeText(text, charIndex) {
+  if (charIndex <= text.length) {
+    searchPlaceholder.textContent = text.slice(0, charIndex);
+    charIndex++;
+    typingAnimation = setTimeout(() => typeText(text, charIndex), 100);
+  } else {
+    erasingAnimation = setTimeout(() => {
+      searchPlaceholder.textContent = "";
       setTimeout(() => {
         additionalTextIndex = (additionalTextIndex + 1) % additionalText.length;
         animateText(additionalText[additionalTextIndex]);
-      }, 1000);
-    }
+      }, 300);
+    }, 1000);
+  }
+}
+
+function animateText(text) {
+  typingAnimation = setTimeout(() => {
+    typeText(text, 0);
   }, 100);
 }
 
 searchInput.addEventListener("focus", () => {
-  clearInterval(typingAnimation);
+  clearTimeout(typingAnimation);
+  clearTimeout(erasingAnimation);
   searchPlaceholder.textContent = "";
 });
 
