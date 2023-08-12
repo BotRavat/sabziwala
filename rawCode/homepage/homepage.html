@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/x-icon" href="logo/logo4.png" sizes="48x48" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="./hero.css" />
+  <link rel="stylesheet" href="./auth.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./contact.css" />
+  <title>Sabzi wala</title>
+</head>
+
+<body>
+  <!-- header of page included navbar -->
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo/logo1.png" />
+    </div>
+
+    <div class="search-wrapper">
+      <div class="searchbox">
+        <input class="search1" type="text" placeholder="" name="search" id="search-input" />
+        <p id="search-input-placeholder"></p>
+      </div>
+    </div>
+
+    <nav class="navbar-menu">
+      <ul class="menuitems">
+        <li><a>Cart</a></li>
+        <li><a>Wishlist</a></li>
+        <li><a onclick="openForm('SignIn')">Sign In</a></li>
+        <li><a>Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-headline">Sabzi wala Delivered to Your Doorstep</h1>
+
+      <p class="hero-subheadline">Order the freshest vegetables and fruits from local farms. Easy, convenient, and
+        eco-friendly!</p>
+
+      <a href="" class="hero-button">Start Shopping</a>
+    </div>
+  </section>
+
+
+  <!-- <div class="image-slider">
+    <img src="assets/homebanner2.jpg" alt="homepage_banner" />
+  </div> -->
+
+
+
+
+
+
+  <section class="featured-products" id="products">
+    <h2 class="featured-title">Featured Products</h2>
+
+    <p class="product-list-heading" style="text-align: left;">Fresh from Farm</p>
+
+    <div class="featured-product-list" style="gap: 64px;">
+
+      <div class="product-item">
+        <img src="assets/images/imgv10.jpg" alt="Product Name">
+        <h3 class="product-name">Fresh Tomato</h3>
+        <p class="product-description">Juicy and vibrant, the perfect burst of flavor for your dishes</p>
+        <div style="display: flex; justify-content: space-between; align-items:center;">
+          <p class="product-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="assets/images/imgv21.jpg" alt="Product Name">
+        <h3 class="product-name">Blue Barries</h3>
+        <p class="product-description">Nature's little superfood, packed with sweetness and antioxidantss</p>
+        <div style="display: flex; justify-content: space-between; align-items:center;">
+          <p class="product-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-item">
+        <img src="assets/images/imgv20.jpg" alt="Product Name">
+        <h3 class="product-name">Fresh Corn</h3>
+        <p class="product-description">Sweet and succulent kernels, the essence of summer on your plate</p>
+        <div style="display: flex; justify-content: space-between; align-items:center;">
+          <p class="product-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="assets/images/imgv23.jpg" alt="Product Name">
+        <h3 class="product-name">Green Beans</h3>
+        <p class="product-description">Crunchy and fresh, elevate your stir-fries and sides with these green gems</p>
+        <div style="display: flex; justify-content: space-between; align-items:center;">
+          <p class="product-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+          <button class="btn-add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <a href="" class="btn-view-all">View All</a>
+  </section>
+
+
+
+
+
+
+  <div class="intro-text">
+    <p>
+      Welcome to Sabzi wala , your one-stop destination for all things fresh,
+      nutritious, and green! We are thrilled to bring you the finest selection
+      of premium vegetables, handpicked with love and care from local farmers
+      and growers, directly delivered to you at your door step.
+    </p>
+  </div>
+
+
+  <div class="featured-products">
+
+    <p class="product-list-heading" style="text-align: center;">OFFERS ZONE</p>
+  </div>
+  <div class="featured-product-list">
+    <!-- <p class="product-list-heading"></p> -->
+
+    <!-- <div class="product-list-row row"> -->
+    <div class="product-item">
+      <img src="assets/images/D1.png" />
+
+    </div>
+    <div class="product-item">
+      <img src="assets/images/D2.png" />
+
+    </div>
+
+    <div class="product-item">
+      <img src="assets/images/D3.png" />
+
+    </div>
+    <div class="product-item">
+      <img src="assets/images/D4.png" />
+
+      <!-- </div> -->
+    </div>
+
+
+    <!-- <div class="featured-product-list">
+
+    <div class="product-item">
+      <img src="assets/productImage/5.png" alt="Product Name">
+    </div>
+    <div class="product-item">
+      <img src="assets/productImage/6.png" alt="Product Name">
+    </div>
+    <div class="product-item">
+      <img src="assets/productImage/7.png" alt="Product Name">
+    </div>
+</div> -->
+
+
+
+    <!--product section-->
+
+    <div class="small-container">
+      <div class=" product-list">
+        <p class="product-list-heading">Under ₹100</p>
+        <div class="product-list-row row">
+          <div class="col4">
+            <a href="proddetail.html"><img src="assets/images/imgv20.jpg" /></a>
+            <p>Sweet and succulent kernels, the essence of summer on your plate</p>
+            <div class="product-card-detail">
+              <p>Fresh Corn</p>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv19.jpg" />
+            <p>Vibrant and flavorful, a rainbow of taste to brighten your meals</p>
+
+            <div class="product-card-detail">
+              <p>Fresh Peepers</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+
+          <div class="col4">
+            <img src="assets/images/imgv18.jpg" />
+            <p>Earth's savory treasures, elevate your dishes with these umami delights</p>
+
+            <div class="product-card-detail">
+              <p>Fresh mushrooms</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv17.jpg" />
+            <p>Nutrient-packed florets, a cruciferous powerhouse for your health-conscious recipes</p>
+
+            <div class="product-card-detail">
+              <p>Fresh broccoli</p>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+        </div>
+
+
+        <p class="product-list-heading" style="text-align: center;">Discount on selected Products</p>
+
+        <div class="featured-product-list">
+          <div class="product-item">
+            <img src="assets/productImage/1.png" alt="Product Name">
+          </div>
+          <div class="product-item">
+            <img src="assets/productImage/2.png" alt="Product Name">
+          </div>
+          <div class="product-item">
+            <img src="assets/productImage/3.png" alt="Product Name">
+          </div>
+          <div class="product-item">
+            <img src="assets/productImage/4.png" alt="Product Name">
+          </div>
+
+        </div>
+
+
+
+
+        <p class="product-list-heading"> Vegetables</p>
+
+        <div class="product-list-row row">
+          <div class="col4">
+            <img src="assets/images/imgv10.jpg" />
+            <p>Juicy and vibrant, the perfect burst of flavor for your dishes</p>
+            <div class="product-card-detail">
+              <p>Fresh Tomato</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+          <div class="col4">
+            <img src="assets/images/imgv16.jpg" />
+            <p>A versatile veggie with a rich taste, ideal for delightful recipes</p>
+
+            <div class="product-card-detail">
+              <p>Fresh Brinjal</p>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv9.jpg" />
+            <p>Spice up your meals with these zesty green chilis!</p>
+            <div class="product-card-detail">
+              <p>Green Chilli</p>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+          <div class="col4">
+            <img src="assets/images/img21.jpg" />
+            <p>Add a pop of color and a crunch of goodness to your salads</p>
+            <div class="product-card-detail">
+              <p>Red Cabbage</p>
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="product-list-heading">Fruits</p>
+
+        <div class="product-list-row row">
+          <div class="col4">
+            <img src="assets/images/imgv13.jpg" />
+            <p>Delicate and nutritious, a must-have for wholesome cooking</p>
+            <div class="product-card-detail">
+              <p>Fresh courgettes</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv21.jpg" />
+            <p>Nature's little superfood, packed with sweetness and antioxidantss</p>
+            <div class="product-card-detail">
+              <p>Blue Barries</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv22.jpg" />
+            <p>Tender and protein-packed, a healthy addition to your plate</p>
+
+            <div class="product-card-detail">
+              <p>Fresh Cowpeas</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+
+          <div class="col4">
+            <img src="assets/images/imgv23.jpg" />
+            <p>Crunchy and fresh, elevate your stir-fries and sides with these green gems</p>
+
+            <div class="product-card-detail">
+              <p>Green Beans</p>
+
+              <p class="product-card-detail-price"><span class="product-card-detail-mrp">₹70.00</span>₹50.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class='contact-page'>
+        <div class="contact-form">
+          <h1> Contact Us</h1>
+
+          <label class='label'> Name</label>
+          <input type="text" placeholder="Enter your full name" />
+
+
+          <label class='label'> Phone</label>
+          <input type="tel" placeholder="Enter Mobile Number" />
+
+
+          <label class='label'> Email</label>
+          <input type="email" placeholder="Enter your email" />
+
+
+          <label class='label'> Message</label>
+          <input type="textarea" placeholder="Drop your message here 😊" wrap="hard" />
+
+          <button>Submit</button>
+        </div>
+
+      </div>
+
+
+      <div class="footer">
+        <div class="about-us">
+
+          <h3 class="aboutP" style="text-align: center;"> Thanks for visiting us! </h3>
+        </div>
+
+        <div style="margin:30px 0; display: flex; justify-content: space-around; align-items: start;">
+          <div style="width: 30%;">
+            <h4 style="text-align: center; font-size: 18px;">About us</h4>
+            <p>
+              At Sabzi wala, we are passionate about providing you with the freshest and highest quality vegetables and
+              fruits delivered right to your doorstep. 
+             
+            </p>
+          </div>
+          <div>
+            <h4 style="font-size: 18px;">Connect on</h4>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Email</p>
+          </div>
+
+          <div>
+            <h4 style="text-align: center; font-size: 18px;">Locate us</h4>
+            <p>Sabzi wala ,Clement town,<br /> Dehradun,248002 ,<br />Email us : sabziwala@email.com</p>
+          </div>
+        </div>
+        <p style="text-align: center; margin:10px 0;">&copy; Copyright 2023, sabziwala, All rights reserved</p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="signin-page signup-page" id="signin">
+        <div class="signup-page-top">
+          <p class="cancel-button" onclick="closeForm('signIn')">❌</p>
+          <p class="site-name">Sabzi wala</p>
+        </div>
+
+        <form class="form-container">
+          <label>Enter Your Email</label>
+          <input type="email" placeholder="xyz@gmail.com" />
+          <label>Enter Your Password</label>
+          <input type="password" placeholder="Enter password" />
+          <button class="signup-page-button">Sign In</button>
+          <p style="font-size: 12px; margin-top: 10px">
+            Don't have an account ?
+            <span onclick="openForm('SignUp')" style="cursor: pointer; font-size: 18px; font-weight: 500">Sign Up</span>
+          </p>
+          <p class="terms-condition">
+            By clicking on Sign In, I accept the
+            <a class="link">Terms & Conditions</a> &
+            <a class="link">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+
+      <div class="signup-page" id="signup">
+        <div class="signup-page-top">
+          <p class="cancel-button" onclick="closeForm('SignUp')">❌</p>
+          <p class="site-name">Sabzi wala</p>
+        </div>
+
+        <form class="form-container">
+          <label>Enter Your Name</label>
+          <input type="text" placeholder="Enter your name" />
+          <label>Enter Your Email</label>
+          <input type="email" placeholder="xyz@gmail.com" />
+          <label>Enter Password</label>
+          <input type="password" placeholder="Choose a strong password" />
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Enter same password again" />
+          <button class="signup-page-button">Sign Up</button>
+          <p style="font-size: 12px; margin-top: 10px">
+            Already have an account ?
+            <span onclick="openForm('SignIn')" style="cursor: pointer; font-size: 18px; font-weight: 500">Sign In</span>
+          </p>
+          <p class="terms-condition">
+            By clicking on Sign Up, I accept the
+            <a class="link">Terms & Conditions</a> &
+            <a class="link">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+
+      <script src="./homepage.js"></script>
+</body>
+
+</html>
