@@ -3,6 +3,12 @@
     text-align: center;
   }
   
+.product-item img:hover{
+    transform: translateY(-4px); 
+}
+.product-item img{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
   .featured-title {
     font-size: 28px;
     font-weight: bold;
@@ -48,8 +54,11 @@
     font-size: 16px;
     font-weight: bold;
     color: #1e943f;
+    
   }
-  
+  .product-card-detail-mrp{
+    padding: 25px;
+ }
   .btn-add-to-cart {
     /* background-color: #ffffff; */
     border:1px solid #000000;
