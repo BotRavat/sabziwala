@@ -1,10 +1,6 @@
 import React from "react";
 import "./footer.css";
-
-
-
-
-export default function Homepage()
+export default function Footer()
 {
     return(
         <>

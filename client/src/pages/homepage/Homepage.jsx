@@ -14,7 +14,6 @@ export default function Homepage()
         <Featured/>
         <Testimonial/>
         <Footer/>
-        
     </>
     )
 }
