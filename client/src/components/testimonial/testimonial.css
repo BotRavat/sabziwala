@@ -1,0 +1,81 @@
+.small-container
+
+/* uses in mid all image padding both side 65px*/
+    {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.col3 {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+
+.col3 img {
+    width: 100%;
+}
+
+
+
+
+
+.testimonial {
+    padding-top: 100px;
+
+}
+
+.testimonial .col3 {
+    text-align: center;
+    padding: 75px 15px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    /*all are in indivisual box*/
+    cursor: pointer;
+    transition: transform 0.5s;
+    background:pink;
+    border-radius: 20px;
+}
+
+.testimonial .col3 img {
+    margin-top: 20px;
+    width: 70px;
+    height: 50%;
+    border-radius: 50%;
+
+}
+
+.testimonial .col3:hover {
+    transform: translateY(-10px);
+    text-transform: var(#f8f8f8);
+}
+
+.fa .fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col3 p {
+    font-size: 16px;
+    margin: 12px 0px;
+    color: #777;
+}
+
+.testimonial.col3 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: antiquewhite;
+}
