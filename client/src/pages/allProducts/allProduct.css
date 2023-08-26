@@ -1,0 +1,14 @@
+.all-product-list-wrapper-heading{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.all-product-list{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}

@@ -4,7 +4,7 @@
   }
   
   .hero-bg {
-    /* background-image: url('/client/public/assets/homebanner2.jpg'); */
+    background-image: url('/public/assets/homebanner2.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -54,98 +54,5 @@
   .hero-button:hover {
     background-color: #32f62b;
     color: black;
-  }
-  
-
-
-
-
-
-
-
-
-  .featured-products {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .featured-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .featured-product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-  }
-  
-  .product-item {
-    flex: 0 0 220px;
-    background-color: #f8f8f8;
-    border:1px solid rgb(220, 220, 220);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-item img {
-    width: 100%;
-    max-height: 150px;
-    /* object-fit: cover; */
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .product-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .product-description {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .product-price,.product-card-detail-price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #1e943f;
-  }
-  
-  .btn-add-to-cart {
-    /* background-color: #ffffff; */
-    border:1px solid #000000;
-    color: #000000;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-add-to-cart:hover {
-    background-color: #1dd926;
-  }
-  
-  .btn-view-all {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 44px;
-    background-color: #ffffff;
-    border:1px solid #1dd926;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-view-all:hover {
-    background-color: #32f62b;
-    color: white;
-  box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.75);
-
   }
   
