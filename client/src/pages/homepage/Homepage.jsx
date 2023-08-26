@@ -12,6 +12,7 @@ export default function Homepage()
         <HomepageHero/>
         <IntroComponent/>
         <ProductCategory/>
+        
         </>
     )
 }
