@@ -1,5 +1,4 @@
 import './App.css';
-import Featured from './components/featured/Featured';
 import Navbar from './components/navbar/Navbar';
 import Homepage from './pages/homepage/Homepage';
 
@@ -9,7 +8,6 @@ function App() {
    <>
     <Navbar/>
     <Homepage/>
-    <Featured/>
    </>
   );
 }
