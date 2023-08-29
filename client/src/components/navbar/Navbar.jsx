@@ -32,8 +32,8 @@ export default function Navbar() {
             <li>
             <Link to="/wishlist">Wishlist</Link>
             </li>
-            <li>
-            <Link to="/signin">SignIn</Link>
+            <li >
+            <Link to="/auth">SignIn</Link>
             </li>
             <li>
             <Link to="/blog">Blog</Link>
